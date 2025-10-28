@@ -5,6 +5,10 @@ pipeline {
         APP_NAME = 'myjavaapp'
     }
 
+    tools {
+        maven '3.9.11'
+    }
+
     stages {
         stage('Checkout') {
             steps {
